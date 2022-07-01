@@ -1,0 +1,98 @@
+{
+	"info": {
+		"_postman_id": "d32bda5f-a838-4d8f-ba7a-8ff6d7238d9d",
+		"name": "medical1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21681995"
+	},
+	"item": [
+		{
+			"name": "Registering user",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"drid\": \"2134\",\r\n    \"drname\":\"Rajith\",\r\n    \"drpwd\":\"temp44\",\r\n    \"specialization\":\"An\"\r\n    \r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Doctor's info 1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/doctors/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"doctors",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Doctor's info 2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/doctors/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"doctors",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List of Doctors",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/doctors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"doctors"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
